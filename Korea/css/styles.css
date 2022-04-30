@@ -1,0 +1,141 @@
+body{
+    background-color: #efdec1;
+   background-image: url(../23201408_m.jpg);
+   background-size: cover;
+    font-family: Verdana, sans-serif;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.container{
+    width: 60%;
+    /* height:500px; */
+    margin-top: 5%; 
+   margin-left: 20%;
+    background: #fff;
+    border-radius: 4px;
+    padding: 16px;
+    text-align: center;
+    position: relative;
+}
+
+#question{
+    font-size: 25px;
+    margin-bottom:70px ;
+    font-weight: bold;
+}
+
+#choices{
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+
+#choices > li{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#choices > li:hover{
+    background: #f8f8f0;
+}
+
+#choices > li.correct{
+    background: #d4edda;
+    background-color: #c3e6cd;
+    color: #155724;
+    font-weight: bold;
+}
+
+#choices > li.correct::after{
+    content: '...正解だよ！';
+}
+
+#choices > li.Incorrect{
+    background: #f8d8da;
+  border-color: #f5c6cb;
+  color: #721c24;
+  font-weight: bold;
+}
+
+#choices > li.Incorrect::after{
+    content: '...残念不正解！';
+}
+
+#btn ,#tesuto > a{
+    
+    font-size: 30px;
+    background: #3498db;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    box-shadow:  0 8px 0 #082233;
+}
+
+#btn.disabled {
+    background: #ccc;
+    box-shadow:  0 8px 0 #bbb;
+    opacity: 0.7;
+}
+
+#tesuto{
+    position: absolute;
+    width: 300px;
+    background: #fff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0, 0.2);
+      top: 500px;
+    left: 0;
+    right: 0;  
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 4px;
+   
+}
+
+#tesuto.hidden{
+    text-align: center;
+    margin-top:45px ;
+    /* transform: translateY(30px); */
+}
+
+
+#tesuto > p{
+    font-size: 25px;
+
+}
+
+#tesuto > a{
+    display: block;
+    text-decoration: none;
+}
+
+.back{
+    margin-left:70px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    
+}
+
+.back > a {
+    display: block;
+    color: #000;
+    font-size: 50px;
+    padding-top: 30%;
+    padding-left: 25%;
+    text-decoration: none;
+}
+
+.back:hover{
+opacity: 0.4;
+}
